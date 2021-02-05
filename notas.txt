@@ -1,0 +1,21 @@
+//instalar laravel con jetstream
+laravel new portafolio_laravel --jet
+
+// o laravel new / composer y luego
+composer require laravel/jetstream
+
+//si ya tengo un proyecto laravel
+php artisan jetstream:install livewire
+
+//para instalar la paquetes(assets) del front
+npm install && npm run dev
+
+// visualizar si la coneccion esta OK
+php artisan tinker
+DB::connection()->getPdo();
+
+//crear modelo migracion y factory
+php artisan make:model Category -mf (migracion factory)
+
+// generar la migracion
+php artisan migrate
