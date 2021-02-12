@@ -1,4 +1,4 @@
-//instalar laravel con jetstream
+//instalar laravel con jetstream y livewire/tailwind
 laravel new portafolio_laravel --jet
 
 // o laravel new / composer y luego
@@ -19,3 +19,35 @@ php artisan make:model Category -mf (migracion factory)
 
 // generar la migracion
 php artisan migrate
+
+//generar componente liwewire
+php artisan make:livewire Courselist
+
+//generar controller
+php artisan make:controller PageController
+ // lista comando artisan
+ php artisan list
+// limpiar cache
+
+php artisan cache:clear
+//darkMode en tailwind.config-> debo volver a build tailwind
+
+darkMode: 'media' o 'class' en config.js
+//compilar tailwind, crea la hoja de estilos a partir de los componentes tailwind traidos por node
+npx tailwindcss-cli@latest build ./resources/css/app.css -o ./public/css/app.css
+
+//crear script json
+"buildtw" : "npx tailwindcss-cli@latest build ./resources/css/app.css -o ./public/css/app.css"
+
+//gradientes
+bg-gradient-to-tr from-white to-gray-300
+
+//agregar custom styles
+donde esta el  resources/app.css
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+y si quiero usar tailwind hago @apply -bg-red-500
+
+//apagar server port 8000
+sudo kill $(sudo lsof -t -i:8000)
