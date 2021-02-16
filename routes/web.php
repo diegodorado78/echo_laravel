@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Symfony\Component\Routing\Route as RoutingRoute;
+use App\Http\Controllers\PageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,8 +15,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+ Route::get('/',[PageController::class,'home'])->name('home');
+// Route::get("/", "PageController@home")->name("home");
 Route::view('/','index');
-
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');

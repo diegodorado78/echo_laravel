@@ -1,3 +1,11 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+/* AGREGAR PROPIOS ESTILO O BASADOS EN LOS DEFAULT DE TAIL
+.contenedor{
+ @apply bg-gradient-to-tr;
+ @apply from-red-500 ;
+ @apply to-yellow-300 ;
+ font-size: 20px;
+} */

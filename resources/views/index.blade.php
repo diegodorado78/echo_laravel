@@ -1,9 +1,21 @@
 @extends('layouts.layout')
 
 @section('content')
-<div class="text-center" >
-  <h1 class="text-2xl text-gray-700 mb-2 uppercase">ECHO LEARNING</h1>
-  <h2 class="text-xl text-gray-600">Contacta los mejores profesionales en tecnología</h2>
-  <h3 class="text-lg text-gray-600">refuerza tus conocimientos y adquiere muchos mas</h3>
-</div>
+  {{-- BUSCADOR Y  MATERIAS --}}
+<section class="seccion1 text-center text-blue-900 my-10" >
+  <livewire:buscador>
+  <livewire:materialist>
+</section>
+  {{-- FORMULARIO COMPRA --}}
+<section class="seccion2 my-20 text-center">
+     <livewire:formulario-tutoria>
+</section>
+  {{-- PROPUESTA DE VALOR --}}
+<section class="seccion3 my-20">
+     <livewire:cadena-valor>
+</section>
+  {{-- CLIENTES SATISFECHOS --}}
+<section class="seccion4 my-20">
+     <livewire:clientes>
+</section>
 @endsection

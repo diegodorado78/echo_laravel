@@ -6,12 +6,19 @@
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
  <title>Echo Learning</title>
  <link rel="stylesheet" href="{{asset('css/app.css')}}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@3.0.6/css/line.css">
 </head>
-<body>
- <main class="py-10">
-  <div class="container mx-auto px-4 ">
+<body class="bg-gradient-to-tr from-green-300 to-indigo-300 ">
+ <div class=" contenedor container w-4/5 mx-auto bg-white shadow-xl">
+<header>
+      <livewire:header>
+</header>
+  <main class="py-5 ">
    @yield('content')
-  </div>
- </main>
+  </main>
+  <footer>
+     <livewire:footer>
+  </footer>
+ </div>
 </body>
 </html>
