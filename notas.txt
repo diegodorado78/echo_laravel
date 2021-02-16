@@ -28,7 +28,6 @@ php artisan make:controller PageController
  // lista comando artisan
  php artisan list
 // limpiar cache
-
 php artisan cache:clear
 //darkMode en tailwind.config-> debo volver a build tailwind
 

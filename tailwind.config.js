@@ -6,13 +6,16 @@ module.exports = {
         "./storage/framework/views/*.php",
         "./resources/views/**/*.blade.php",
     ],
-    darkMode:'media',
+    darkMode: "media",
 
     theme: {
         extend: {
             fontFamily: {
                 sans: ["Nunito", ...defaultTheme.fontFamily.sans],
             },
+            backgroundImage: (theme) => ({
+                echo: "url('./public/images/sitio.png')",
+            }),
         },
     },
 
