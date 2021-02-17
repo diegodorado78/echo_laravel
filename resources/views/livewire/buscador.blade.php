@@ -2,7 +2,7 @@
 
 <div class="">
     <form action="">
-    <h2 class=" font-bold text-2xl mt-5 mb-2" > ¿ Qué quieres aprender hoy?</h2>
+    <h2 class=" font-extrabold text-2xl mt-5 mb-2" > ¿ Qué quieres aprender hoy?</h2>
     <input type="text" class="w-4/5 rounded-md shadow-lg my-3" placeholder="Ingresa la materia o tema de interes..." /><br>
     {{-- BOTON BORRAR --}}
       <a class=" inline-block rounded-md border p-0.5 bg-white"">

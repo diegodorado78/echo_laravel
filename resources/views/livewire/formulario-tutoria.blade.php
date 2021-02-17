@@ -26,7 +26,7 @@
             </label>
     </div>
             <input class="bg-gray-500 cursor-pointer rounded-md p-1 text-white font-semibold text-lg" type="submit"  value="Borrar">
-        <input class="bg-blue-900 cursor-pointer rounded-md p-1 text-white font-semibold text-lg" type="submit"  value="Enviar">
+        <input class="bg-blue-900 hover:bg-blue-600 cursor-pointer rounded-md p-1 text-white font-semibold text-lg" type="submit"  value="Enviar">
       </form>
     </div>
 </div>
