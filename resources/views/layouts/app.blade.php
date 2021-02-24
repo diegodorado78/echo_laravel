@@ -18,7 +18,9 @@
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
-    <body class="font-sans antialiased">
+    <body class="font-sans antialiased bg-gradient-to-tr from-green-300 to-indigo-300">
+        <div class="container w-4/5 mx-auto bg-white shadow-xl">
+       <livewire:header>
         <x-jet-banner />
 
         <div class="min-h-screen bg-gray-100">
@@ -42,5 +44,9 @@
         @stack('modals')
 
         @livewireScripts
+              <livewire:footer>
+
+        </div>
+
     </body>
 </html>
