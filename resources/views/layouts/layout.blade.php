@@ -9,9 +9,10 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@3.0.6/css/line.css">
 </head>
 <body class="bg-gradient-to-tr from-green-300 to-indigo-300 ">
- <div class=" contenedor container w-4/5 mx-auto bg-white shadow-xl">
+ <div class="  container w-4/5 mx-auto bg-white shadow-xl">
 <header>
       <livewire:header>
+<x-autenticacion/>
 </header>
   <main class="py-5 ">
    @yield('content')

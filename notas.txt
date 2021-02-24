@@ -50,3 +50,10 @@ y si quiero usar tailwind hago @apply -bg-red-500
 
 //apagar server port 8000
 sudo kill $(sudo lsof -t -i:8000)
+//los views del login estan en views/auth
+
+// mostrar views del sistema(jetstream) login/registro
+php artisan vendor:publish opcion 25
+
+//generar componente de vista
+php artisan make:component autenticacion

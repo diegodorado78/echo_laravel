@@ -9,13 +9,13 @@
                 Empresa
             </div>
             <!-- Links -->
-            <a href="#" class=" block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+            <a href="#" class=" block text-gray-500 hover:text-gray-100 text-sm font-medium duration-700">
                 Políticas de Uso
             </a>
-            <a href="#" class=" block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+            <a href="#" class=" block text-gray-500 hover:text-gray-100 text-sm font-medium duration-700">
                 Términos y Condiciones
             </a>
-             <a href="#" class=" block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+             <a href="#" class=" block text-gray-500 hover:text-gray-100 text-sm font-medium duration-700">
                 Trabaja con Nosotros
             </a>
         </div>
@@ -27,13 +27,13 @@
             </div>
 
             <!-- Links -->
-            <a href="#" class=" block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+            <a href="#" class=" block text-gray-500 hover:text-gray-100 text-sm font-medium duration-700">
                 Preguntas Frecuentes
             </a>
-            <a href="#" class=" block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+            <a href="#" class=" block text-gray-500 hover:text-gray-100 text-sm font-medium duration-700">
                 Configuración
             </a>
-             <a href="#" class=" block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+             <a href="#" class=" block text-gray-500 hover:text-gray-100 text-sm font-medium duration-700">
                 Contacto
             </a>
 
@@ -46,19 +46,19 @@
                 Síguenos en redes
             </div>
             <!-- Links -->
-            <a href="#" class=" block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+            <a href="#" class=" block text-gray-500 hover:text-gray-100 text-sm font-medium duration-700">
             <i class="uil uil-facebook-f"></i>
              Facebook
             </a>
-            <a href="#" class=" block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+            <a href="#" class=" block text-gray-500 hover:text-gray-100 text-sm font-medium duration-700">
              <i class="uil uil-instagram"></i>
              Instagram
             </a>
-            <a href="#" class=" block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+            <a href="#" class=" block text-gray-500 hover:text-gray-100 text-sm font-medium duration-700">
              <i class="uil uil-twitter-alt"></i>
              Twitter
             </a>
-            <a href="#" class="my-1 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+            <a href="#" class="my-1 block text-gray-500 hover:text-gray-100 text-sm font-medium duration-700">
             <i class="uil uil-youtube"></i>
              YouTube
             </a>
