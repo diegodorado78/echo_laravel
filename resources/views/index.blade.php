@@ -4,7 +4,8 @@
   {{-- BUSCADOR Y  MATERIAS --}}
 <section class="seccion1 text-center text-blue-900 my-10" >
   <livewire:buscador>
-  <livewire:materialist>
+  {{-- <livewire:subjectlist > --}}
+<x-subject-card/>
 </section>
   {{-- FORMULARIO COMPRA --}}
 <section class="seccion2 my-20 text-center">
@@ -18,7 +19,5 @@
 <section class="seccion4 my-20">
      <livewire:clientes>
 </section>
-<section class="seccion5 my-20">
-  {{-- <livewire:subject> --}}
-</section>
+
 @endsection

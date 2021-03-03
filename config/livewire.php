@@ -54,7 +54,8 @@ return [
     */
 
     'asset_url' => null,
-
+    // 'asset_base_url' => '/assets',
+    // 'asset_base_url' => '/application'
     /*
     |--------------------------------------------------------------------------
     | Livewire Endpoint Middleware Group
