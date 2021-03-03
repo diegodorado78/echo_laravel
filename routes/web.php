@@ -3,8 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use Symfony\Component\Routing\Route as RoutingRoute;
 use App\Http\Controllers\PageController;
-use App\Http\Livewire\Subject;
-
+use App\Http\Livewire\Subjectlist;
+use App\Http\Livewire\Materialist;
+use App\Http\Livewire\MateriaIndividual;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,8 +17,10 @@ use App\Http\Livewire\Subject;
 |
 */
 
- Route::get('/',[PageController::class,'home'])->name('home');
+ Route::get('/',[Materialist::class,'render'])->name('home');
 // Route::get('materia',[PageController::class,'subject'])->name('subject');
+Route::get('materias/',[Subjectlist::class,'render'])->name('materias');//necesito llamar la fu
+Route::get('materiaI/{subject:id}',[MateriaIndividual::class,'render'])->name('materiaI');//necesito llamar la funcion para que muestre
 
 
 // Route::get("/", "PageController@home")->name("home");

@@ -15,7 +15,8 @@
 <x-autenticacion/>
 </header>
   <main class="py-5 ">
-   @yield('content')
+      @yield('lista')
+      @yield('content')
   </main>
   <footer>
      <livewire:footer>

@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-
+use App\Models\Subject;
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -13,6 +13,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
-    }
+        // User::factory(5)->create();//usa la entidad User para crear 10 d
+        Subject::factory(10)->create();
+      }
 }

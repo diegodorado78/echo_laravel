@@ -22,7 +22,9 @@ class SubjectFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => $this->faker->sentence($nbWords = 2, $variableNbWords = true),
+            'description' => $this->faker->text(150),
+            'image'=> $this->faker->imageUrl(1280,720),
         ];
     }
 }
