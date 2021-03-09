@@ -7,7 +7,7 @@
 
 {{-- MOSTRAR MATERIAS populares--}}
      <h1 class="text-center text-xl font-bold text-blue-800">Materias Populares </h1>
-    <div class="grid grid-cols-3">
+    <div class="md:grid grid-cols-3">
       @foreach($subjects as $subject)
      <div class="bg-white shadow-lg rounded-lg px4 text-center p-5 ">
     <a href="{{route('materiaI',$subject->id)}}">
