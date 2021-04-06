@@ -9,3 +9,27 @@
  @apply to-yellow-300 ;
  font-size: 20px;
 } */
+.form-label{
+ @apply block uppercase text-sm text-gray-500 font-bold py-2;
+}
+.form-control{
+ @apply block w-full p-1 rounded-md bg-gray-300  text-gray-600 border border-gray-200  py-2;
+}
+/* estilos para el prefix focus */
+.form-control:focus{
+@apply bg-white border-gray-300;
+}
+.btn-blue{
+ @apply my-1 bg-transparent hover:bg-blue-900 text-blue-900 font-semibold hover:text-white p-1 border border-blue-900 hover:border-transparent rounded;
+}
+.btn-red{
+ @apply bg-transparent hover:bg-red-500 text-red-600 font-semibold hover:text-white p-1 border border-red-500 hover:border-transparent rounded;
+}
+
+.li-materia{
+ @apply md:ml-4 md:inline-block transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-100 shadow-lg  md:shadow-none;
+}
+
+.a-materia{
+ @apply md:border md:rounded-md no-underline  hover:shadow-xl border-blue-900 md:p-1;
+}

@@ -1,10 +1,12 @@
 @extends('layouts.layout')
-
 @section('content')
   {{-- BUSCADOR Y  MATERIAS --}}
 <section class="seccion1 text-center text-blue-900 my-10" >
   <livewire:buscador>
-  <livewire:materialist>
+</section>
+<section>
+    {{-- <livewire:materialist :subjects ="$subjects"> --}}
+    {{-- <x-lista /> --}}
 </section>
   {{-- FORMULARIO COMPRA --}}
 <section class="seccion2 my-20 text-center">

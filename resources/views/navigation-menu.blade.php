@@ -3,17 +3,20 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
             <div class="flex">
-
-
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-jet-nav-link  class="text-gray-500 hover:text-blue-900   text-md  font-semibold duration-700" href="{{ route('home') }}" :active="request()->routeIs('home')">
-                        {{ __('Paginal Principal') }}
+                        {{ __('Home') }}
                     </x-jet-nav-link>
                 </div>
                  <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-jet-nav-link class="text-gray-500 hover:text-blue-900   text-md  font-semibold duration-700"   href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                         {{ __(' Perfil usuario') }}
+                    </x-jet-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-jet-nav-link class="text-gray-500 hover:text-blue-900   text-md  font-semibold duration-700"   href="{{ route('admin') }}" :active="request()->routeIs('admin')">
+                        {{ __(' Panel de control') }}
                     </x-jet-nav-link>
                 </div>
             </div>

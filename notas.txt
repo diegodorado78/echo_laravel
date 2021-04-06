@@ -55,5 +55,8 @@ sudo kill $(sudo lsof -t -i:8000)
 // mostrar views del sistema(jetstream) login/registro
 php artisan vendor:publish opcion 25
 
+//modificar view de registro y login
+resources/views/auth
+
 //generar componente de vista
 php artisan make:component autenticacion

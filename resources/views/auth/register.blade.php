@@ -24,26 +24,24 @@
                 <x-jet-input id="name" class="block mt-1 mx-auto w-4/5" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" placeholder="Nombre" />
             </div>
              <div>
-                <x-jet-input id="a_paterno" class="block mt-1 mx-auto w-4/5" type="text" name="a_paterno" :value="old('a_paterno')" required autofocus autocomplete="a_paterno" placeholder="Primer Apellido" />
+                <x-jet-input id="lastnme" class="block mt-1 mx-auto w-4/5" type="text" name="lastname" :value="old('lastname')" required autofocus autocomplete="lastname" placeholder="Apellido" />
             </div>
-            <div>
-                <x-jet-input id="a_materno" class="block mt-1 mx-auto w-4/5" type="text" name="a_materno" :value="old('a_materno')" required autofocus autocomplete="a_materno" placeholder="Segundo Apellido" />
-            </div>
+
             {{-- GENERO --}}
          <div class="mt-1">
         <h1 id="user_type" class="block mt-1 w-4/5 mx-auto r text-gray-500 font-bold"> Género </h1>
-          <select class=" text-gray-500 block my-1 mx-auto w-4/5 border-blue-900 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm" name="user_type" id="user_type">
+          <select class=" text-gray-500 block my-1 mx-auto w-4/5 border-blue-900 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm" name="gender" id="gender">
           <option value="estudiante">Masculino</option>
           <option value="tutor">Femenino</option>
           <option value="tutor">No binario</option>
            </select>
             </div>
              <div>
-                <x-jet-input id="telefono" class="block mt-1 mx-auto w-4/5" type="text" name="telefono" :value="old('telefono')" required autofocus autocomplete="telefono" placeholder="Teléfono" />
+                <x-jet-input id="phone" class="block mt-1 mx-auto w-4/5" type="text" name="phone" :value="old('phone')" required autofocus autocomplete="phone" placeholder="Teléfono" />
             </div>
              <div>
                <h1 class="block mt-1 w-4/5 mx-auto r text-gray-500 font-bold"> Fecha de Nacimiento</h1>
-                <x-jet-input id="fecha_nacimiento" class="block mt-1 mx-auto w-4/5 text-gray-500" type="date" name="fecha_nacimiento" :value="old('fecha_nacimiento')" required autofocus autocomplete="fecha_nacimiento" placeholder="Fecha de Nacimiento" />
+                <x-jet-input id="birthday" class="block mt-1 mx-auto w-4/5 text-gray-500" type="date" name="birthday" :value="old('birthday')" required autofocus autocomplete="birthday" placeholder="Fecha de Nacimiento" />
             </div>
             {{-- DATOS DE LOGEO --}}
                <h1  class="block my-2 w-4/5 mx-auto text-center text-gray-600 font-bold"> Datos de Ingreso </h1>
