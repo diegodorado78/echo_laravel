@@ -40,5 +40,13 @@
 </section>
 <section class="seccion5 my-20">
   {{-- <livewire:subject> --}}
+    {{-- <div>
+@foreach ($usuariosA as $usuario)
+<div>
+<h1> {{ $usuario['name'] }}
+<h1>{{ $usuario['email'] }} </h1>
+</div>
+@endforeach
+</div> --}}
 </section>
 @endsection

@@ -15,7 +15,7 @@ php artisan tinker
 DB::connection()->getPdo();
 
 //crear modelo migracion y factory
-php artisan make:model Category -mf (migracion factory)
+php artisan make:model Category -mf (migracion factory) j
 
 // generar la migracion
 php artisan migrate
@@ -60,3 +60,5 @@ resources/views/auth
 
 //generar componente de vista
 php artisan make:component autenticacion
+//aejecutar el seeder
+php artisan db:seed
