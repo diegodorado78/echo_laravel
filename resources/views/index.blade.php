@@ -22,5 +22,12 @@
 </section>
 <section class="seccion5 my-20">
   {{-- <livewire:subject> --}}
+    <div>
+@foreach ($usuariosA as $item)
+    <h1> {{$item->email}}</h1>
+@endforeach
+</div>
 </section>
+
+
 @endsection

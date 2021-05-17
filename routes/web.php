@@ -6,6 +6,10 @@ use App\Http\Controllers\PageController;
 use App\Http\Livewire\Subjectlist;
 use App\Http\Livewire\Materialist;
 use App\Http\Livewire\MateriaIndividual;
+use App\Http\Livewire\RequestList;
+use App\Http\Livewire\RequestListPage;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,6 +25,7 @@ use App\Http\Livewire\MateriaIndividual;
 // Route::get('materia',[PageController::class,'subject'])->name('subject');
 Route::get('materias/',[Subjectlist::class,'render'])->name('materias');//necesito llamar la fu
 Route::get('materiaI/{subject:id}',[MateriaIndividual::class,'render'])->name('materiaI');//necesito llamar la funcion para que muestre
+Route::get('solicitudes',[RequestListPage::class,'render'])->name('solicitudes');//necesito llamar la funcion para que muestre
 
 
 // Route::get("/", "PageController@home")->name("home");

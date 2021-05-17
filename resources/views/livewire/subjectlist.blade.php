@@ -1,5 +1,5 @@
 <div>
-    @extends('layouts.layout')
+@extends('layouts.layout')
 @section('content')
 {{-- CONTAINER --}}
     <div class="mx-auto">
@@ -18,10 +18,5 @@
     </div>
     @endforeach
   </div>
-
-  </div>
-
-
-
 @endsection
 </div>
