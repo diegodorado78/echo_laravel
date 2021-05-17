@@ -8,7 +8,7 @@
         <h1> <strong> materia:</strong>  {{ $request->subject_name}}</h1>
         <p>  <strong> valor $: </strong>  {{ $request->fare}}</p>
         <p><strong>medio de pago:</strong>  {{ $request->payment_method}}</p>
-        <p> <strong> Sitio de tutoria:</strong> Sitio de tutoria: {{ $request->site}}</p>
+        <p> <strong> Sitio de tutoria:</strong> {{ $request->site}}</p>
     </div>
     @endforeach
     </div>

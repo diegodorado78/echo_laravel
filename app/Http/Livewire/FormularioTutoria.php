@@ -11,7 +11,10 @@ class FormularioTutoria extends Component{
     public $site="";
     public $payment_method="";
 
-    public function crear(){
+    public function crear(Request $request){
+      $payment_method= $request->payment_method;
+            $site= $request->site;
+
          return Request::create([ // el modelo recibe un array con los campos a llenar del nuevo registro
           'subject_name'=>$this->subject_name,
           'fare'=>$this->fare,

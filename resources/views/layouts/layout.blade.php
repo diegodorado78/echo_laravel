@@ -22,5 +22,6 @@
      <livewire:footer>
   </footer>
  </div>
+ @livewireScripts
 </body>
 </html>
