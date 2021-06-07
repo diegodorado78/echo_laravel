@@ -1,5 +1,4 @@
 <div class="py-1 flex flex-col h-screen mx-1 ">
-      <img src="{{asset('images/user_photo.jpg')}}" class="h-1/6 md:h-2/6 mx-auto rounded-full">
      <livewire:show-profile>
       {{-- <div class="p-5 md:p-10 my-4">
       <p> <strong> Ciudad: </strong>  Cartagena</p>

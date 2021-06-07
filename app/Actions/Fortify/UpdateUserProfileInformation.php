@@ -6,9 +6,12 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
 use Laravel\Fortify\Contracts\UpdatesUserProfileInformation;
+use Livewire\WithFileUploads;
+
 
 class UpdateUserProfileInformation implements UpdatesUserProfileInformation
 {
+     use WithFileUploads;
     /**
      * Validate and update the given user's profile information.
      *

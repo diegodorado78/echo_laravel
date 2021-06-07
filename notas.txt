@@ -62,3 +62,5 @@ resources/views/auth
 php artisan make:component autenticacion
 //aejecutar el seeder
 php artisan db:seed
+//modificar el registro y login de jetstream
+ resources/views/auth/register.blade.php

@@ -7,7 +7,7 @@ use App\Models\Profile;
 use App\Models\User;
 
 class ShowProfile extends Component{
-public $name,$phone,$birthday,$email;
+public $name,$phone,$birthday,$email,$photo,$profile_photo_path;
     public function render()
     {
         $users =User::latest('id')->take(1)->get();

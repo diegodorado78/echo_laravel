@@ -9,13 +9,11 @@
         <form method="POST" action="{{ route('register') }}">
             @csrf
           <h1  class="font-bold text-2xl text-blue-900 text-center border-b"> Registro de usuario </h1>
-
-
           <div class="mt-4">
         <h1 id="user_type" class="block mt-1 w-4/5 mx-auto text-center text-gray-600 font-bold"> Elija un tipo de usuario </h1>
-          <select class=" text-gray-500 block my-5 mx-auto w-4/5 border-blue-900 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm" name="user_type" id="user_type">
-          <option value="estudiante">Estudiante</option>
-          <option value="tutor">Tutor</option>
+          <select  wire:model="user_type" class=" text-gray-500 block my-5 mx-auto w-4/5 border-blue-900 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm" name="user_type" id="user_type">
+          <option value="Estudiante">Estudiante</option>
+          <option value="Tutor">Tutor</option>
            </select>
             </div>
             {{-- DATOS PERSONALES --}}
@@ -30,10 +28,10 @@
             {{-- GENERO --}}
          <div class="mt-1">
         <h1 id="user_type" class="block mt-1 w-4/5 mx-auto r text-gray-500 font-bold"> Género </h1>
-          <select class=" text-gray-500 block my-1 mx-auto w-4/5 border-blue-900 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm" name="gender" id="gender">
-          <option value="estudiante">Masculino</option>
-          <option value="tutor">Femenino</option>
-          <option value="tutor">No binario</option>
+          <select wire:model="gender" class=" text-gray-500 block my-1 mx-auto w-4/5 border-blue-900 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm" name="gender" id="gender">
+          <option value="masculino">Masculino</option>
+          <option value="femenino">Femenino</option>
+          <option value="no_binario">No binario</option>
            </select>
             </div>
              <div>
