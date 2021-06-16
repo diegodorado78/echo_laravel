@@ -64,3 +64,10 @@ php artisan make:component autenticacion
 php artisan db:seed
 //modificar el registro y login de jetstream
  resources/views/auth/register.blade.php
+ //habilitar livewire es importante para los metodos del adminlte
+ config/adminlte livewire:true
+ instalar laravel permission por Spatie
+ crear seeder personalizados
+ php artisan make:seeder UserSeeder
+ //ejec0utar migraciones y seed al tiempo
+ php artisan migrate:fresh --seed

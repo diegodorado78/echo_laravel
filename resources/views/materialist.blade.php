@@ -12,12 +12,12 @@
       <h1 class="bg-blue-900 cursor-pointer text-lg text-white font-bold p-2 rounded-md w-2/5 text-center mx-auto my-5"> Áreas del Conocimiento</h1>
     </a>
     <nav class="">
-    <ul class="mx-5 md:flex md:flex-wrap ">
-      <li class="li-materia my-2" > Populares:</li>
-      @foreach ($subjects as $item)
-          <li class="li-materia my-2">
-        <a class="a-materia text-blue-900 text-bold" href="#">
-          {{$item->name}}
+    <ul class=" mx-auto md:flex md:flex-wrap w-max  ">
+      {{-- <li class="li-materia my-2 mx-auto" > Populares:</li> --}}
+      @foreach ($subjects as $subject)
+          <li class="li-materia my-2 text-blue-900">
+      <a  class="a-materia"href="{{route('materiaI',$subject->id)}}">
+            {{$subject->name}}
         </a>
       </li>
       @endforeach

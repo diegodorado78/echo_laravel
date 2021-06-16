@@ -45,11 +45,11 @@ return [
     |
     */
 
-    'logo' => '<b>Echo</b>Learning',
-    'logo_img' => 'vendor/adminlte/dist/img/favicon.ico',
-    'logo_img_class' => 'brand-image img-circle elevation-3',
-    'logo_img_xl' => null,
-    'logo_img_xl_class' => 'brand-image-xs',
+    'logo' => null,
+    'logo_img' => null,
+    'logo_img_class' => '',
+    'logo_img_xl' => 'vendor/adminlte/dist/img/ECHO_LOGO3.png',
+    'logo_img_xl_class' => 'brand-image-xs justify-center',
     'logo_img_alt' => 'echo_logo',
 
     /*
@@ -65,10 +65,10 @@ return [
     */
 
     'usermenu_enabled' => true,
-    'usermenu_header' => false,
-    'usermenu_header_class' => 'bg-primary',
-    'usermenu_image' => false,
-    'usermenu_desc' => false,
+    'usermenu_header' => true,
+    'usermenu_header_class' => 'bg-gradient-info',
+    'usermenu_image' => true,
+    'usermenu_desc' => true,
     'usermenu_profile_url' => false,
 
     /*
@@ -85,7 +85,7 @@ return [
 
     'layout_topnav' => null,
     'layout_boxed' => null,
-    'layout_fixed_sidebar' => null,
+    'layout_fixed_sidebar' => true,
     'layout_fixed_navbar' => null,
     'layout_fixed_footer' => null,
 
@@ -207,7 +207,7 @@ return [
     |
     */
 
-    'enabled_laravel_mix' => false,
+    'enabled_laravel_mix' =>false,
     'laravel_mix_css_path' => 'css/app.css',
     'laravel_mix_js_path' => 'js/app.js',
 
@@ -234,16 +234,15 @@ return [
             'url'  => 'admin/blog',
             'can'  => 'manage-blog',
         ],
-        [
-            'text'        => 'Paginas',
-            'url'         => 'admin/pages',
-            'icon'        => 'far fa-fw fa-file',
-            'label'       => 3,
-            'label_color' => 'success',
+         [
+            'text' => 'Usuarios',
+            'url'  => 'admin/users',
+            'icon'  => 'far fa-user fa-fw',
         ],
-        ['header' => 'account_settings'],
+
+        ['header' => 'Menú'],
         [
-            'text' => 'perfil',
+            'text' => 'Perfil',
             'url'  => 'admin/settings',
             'icon' => 'fas fa-fw fa-user',
         ],
@@ -253,8 +252,8 @@ return [
             'icon' => 'fas fa-fw fa-lock',
         ],
         [
-            'text'    => 'multinivel',
-            'icon'    => 'fas fa-fw fa-share',
+            'text'    => 'Páginas',
+            'icon'    => 'fas fa-fw fa-file',
             'submenu' => [
                 [
                     'text' => 'Home',
@@ -286,22 +285,6 @@ return [
             ],
                 ],
 
-        ],
-        ['header' => 'Etiquetas'],
-        [
-            'text'       => 'importante',
-            'icon_color' => 'red',
-            'url'        => '#',
-        ],
-        [
-            'text'       => 'alerta',
-            'icon_color' => 'yellow',
-            'url'        => '#',
-        ],
-        [
-            'text'       => 'información',
-            'icon_color' => 'cyan',
-            'url'        => '#',
         ],
     ],
 
@@ -423,5 +406,5 @@ return [
     | https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Other-Configuration
     */
 
-    'livewire' => false,
+    'livewire' => true,
 ];

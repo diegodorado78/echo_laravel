@@ -1,12 +1,13 @@
 @extends('adminlte::page')
+
 @section('title', 'Dashboard')
 
 @section('content_header')
-    <h1>Panel de control</h1>
+    <h1>Lista de Usuarios</h1>
 @stop
 
 @section('content')
-    <p>Panel de control para administradores de Echo Learning </p>
+    @livewire('admin.users-index')
 @stop
 
 @section('css')

@@ -9,6 +9,7 @@
  @apply to-yellow-300 ;
  font-size: 20px;
 } */
+
 .form-label{
  @apply block uppercase text-sm text-gray-500 font-bold py-2;
 }

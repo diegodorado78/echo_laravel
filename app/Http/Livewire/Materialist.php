@@ -14,7 +14,7 @@ class Materialist extends Component
     public function render(){
         // $usuarios=HTTP::get('http://localhost:3000/users');
         // $usuariosA=$usuarios->json();
-        $subjects =Subject::latest('id')->take(5)->get();
+        $subjects =Subject::first('id')->take(6)->get();
         return view('materialist',compact('subjects')); // ,'usuariosA'paso los datos atraves de subjects sin $
     }
 }

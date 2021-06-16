@@ -16,9 +16,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        User::factory(5)->create();//usa la entidad User para crear 10 d
-        Subject::factory(10)->create();
+
         Request::factory(8)->create();
+        $this->call(RoleSeeder::class);
+        $this->call(UserSeeder::class);
+        $this->call(SubjectSeeder::class);
+
 
       }
 }

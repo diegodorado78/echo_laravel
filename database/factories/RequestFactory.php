@@ -22,7 +22,7 @@ class RequestFactory extends Factory
     public function definition()
     {
         return [
-            'subject_name' => $this->faker->sentence($nbWords = 2, $variableNbWords = true),
+            'subject_name' => $this->faker->sentence($nbWords = 1, $variableNbWords = true),
             'fare' => $this->faker->randomNumber($nbDigits = NULL, $strict = false),
             'payment_method'=> $this->faker->word($nb = 2, $asText = false) ,
             'site'=> $this->faker->word($nb = 2, $asText = false),
